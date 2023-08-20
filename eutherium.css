@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --Verydarkbluee: hsl(216, 50%, 16%);
+    --Verydarkblue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Verydarkbluee);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#component{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: var(--Verydarkbluee);
+    height: 530px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.7);
+}
+
+.box [src*= "./image-equilibrium.jpg"] {
+    width: 100%;
+    border-radius: 10%;
+    position: relative;
+    bottom: 30px;
+    padding: 0 20px 0 20px;
+}
+
+.box [src*= "./icon-view.svg"]{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 125px;
+    top: 130px;
+    z-index: 1;
+
+}
+
+.content{
+    padding-left: 20px;
+}
+
+.content h3{
+    color: var(--White);
+}
+
+.content p{
+    font-size: 16px;
+    color: var(--Softblue);
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.eutherium{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.eutherium p{
+    font-size: 14px;
+    color: var(--Softblue);
+}
+
+.eutherium p span{
+    color: var(--Cyan);
+    font-weight: 600;
+    padding-right: 80px;
+}
+
+.eutherium img{
+    padding: 0px 0px;
+}
+
+.border{
+     border-top: 1px solid var(--Softblue);
+     margin: 20px 20px;
+}
+
+.avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.avatar [src*= "./image-avatar.png"] {
+    width: 10%;
+    border: 1px solid var(--White);
+    border-radius: 50px;
+}
+
+.avatar p{
+    color: var(--Softblue);
+    font-size: 16px;
+    padding-right: 30px;
+}
+
+.avatar p span{
+    color: var(--White);
+}
+
+
+@media (min-width: 63rem) {
+    
+    body{
+        padding: 65px 0;
+    }
+}
+
+
